@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #111827;
+    color: white;
+}
+
+/* header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+ul {
+    display: flex;
+    list-style: none;
+    column-gap: 50px;
+}
+li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+#hambrger {
+    display:none;
+}
+.home{
+    padding: 4px 10px;
+    background-color: rgb(100, 100, 224) ;
+    border-radius: 5px;
+
+}
+
+/* main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+.leftsection h3 {
+    display: inline;
+}
+.leftsection h1 {
+    font-size: 30px;
+}
+.leftsection h1 span {
+    color:rgb(197, 197, 89);
+}
+
+/* project section */
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.project div {
+    height: 5px;
+    width: 135px;
+    background-color: blue;
+}
+img[alt="project-image"] {
+    height: 20vh;
+    width: 10vw;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 0px;
+
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerHorizontalLine {
+    height: 5px;
+    width: 135px;
+    background-color: blue;
+}
+
+footer h2 {
+    padding: 4px;
+}
+footer .link {
+    margin: 8px;
+}
+
+
+/* Media Query */
+
+@media (max-width: 576px) {
+    ul {
+        display: none;
+    }
+    #hambrger {
+        display:block;
+    }
+  
+    main {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    .leftsection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .leftsection h1 span {
+        margin-left: 50px;
+    }
+    .rightsection img {
+        width: 60vw;
+    }
+
+    .project-list{
+        display: flex;
+        flex-direction: column;
+    }
+    img[alt="project-image"] {
+        height: 30vh;
+        width: 50vw;
+    }
+    footer {
+        margin-top: 40px;
+    }
+
+}
+
